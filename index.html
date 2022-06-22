@@ -422,19 +422,53 @@
           </ul>
         </div>
         <div class="footer-field">
-          <p></p>
-          <form action="" class="footer-form">
-            <lable class="footer-lable"><input type="text" class="footer-input" /></lable>
-          </form>
-          <button
+          <p class="footer-txt">Подпишитесь на рассылку</p>
+          <div class="fotter-form-wrap">
+            <form class="footer-form">
+              <lable class="footer-lable">
+                <input type="email" name="email" placeholder="E-mail" class="footer-input" />
+              </lable>
+            </form>
+            <button type="submit" class="footer-button">
+              Подписаться
+              <svg class="footer-icon-send" width="24" height="24">
+                <use href="./svg/sprite-ws.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <lable for="username" class="modal-lable">Имя</lable>
+          <input type="text" name="username" id="username" class="modal-input" />
+
+          <lable class="modal-lable"
+            >Имя<input type="text" name="username" class="modal-input"
+          /></lable>
+
+          <button type="submit" class="modal-send-btn">Отправить</button>
+        </form>
+
+        <!-- Пример из конспекта -->
+        <p class="example-form-txt">Пример формы из конспекта</p>
+
+        <form>
+          <label for="user_email">Email</label>
+          <input type="email" name="email" id="user_email" />
+
+          <label for="user_password">Password</label>
+          <input type="password" name="password" id="user_password" />
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <button type="button" class="modal-btn-close" data-modal-close>
           <svg class="modal-icon" width="18" height="18">
             <use href="./svg/sprite-ws.svg#icon-close-black"></use>
           </svg>
