@@ -812,7 +812,6 @@ a {
   padding: 40px;
 
   width: 528px;
-  height: 581px;
 
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -827,6 +826,7 @@ a {
   position: absolute;
   right: 8px;
   top: 8px;
+  padding: 0%;
 
   display: flex;
   align-items: center;
@@ -838,7 +838,7 @@ a {
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  background: #fff;
+  background: transparent;
 }
 
 .modal-icon-close {
@@ -865,18 +865,22 @@ a {
 }
 
 .form-label {
-  font-family: 'Roboto';
-  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
 
+.form-label:last-child {
+  margin-bottom: 0px;
+}
+
 .form-input-wrap {
   position: relative;
   display: block;
-  margin-bottom: 10px;
   margin-top: 4px;
 }
 
